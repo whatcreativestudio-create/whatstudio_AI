@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WHAT?studio - Trasformiamo i tuoi prodotti in contenuti social straordinari con l'AI. Gestione social completa per 6 mesi.">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta name="keywords" content="AI, social media, gestione social, contenuti AI, marketing digitale">
+    <meta name="author" content="WHAT?studio">
+    
+    <title>WHAT?studio - AI Social Management</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Font Awesome per icone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Floating elements -->
+    <div class="float-element"></div>
+    <div class="float-element"></div>
+    <div class="float-element"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo-fixed">
+                <img src="images/logos/logo.webp" alt="WHAT?studio Logo">
+            </div>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#process">Come Funziona</a></li>
+                <li><a href="#packages">Pacchetti</a></li>
+                <li><a href="#gallery">Portfolio</a></li>
+                <li><a href="chi-siamo.html">Chi Siamo</a></li>
+                <li><a href="#contact">Contatti</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Trasformiamo i tuoi prodotti in contenuti social <span>straordinari</span> con l'AI</h1>
+            <p>Gestione social completa + Contenuti AI esclusivi per 6 mesi</p>
+            <a href="#packages" class="cta-button">Scopri i nostri pacchetti</a>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process scroll-reveal">
+        <div class="container">
+            <h2 class="section-title">Come Funziona</h2>
+            <div class="process-grid">
+                <div class="process-item">
+                    <div class="process-number">1</div>
+                    <h3>Spedisci i prodotti</h3>
+                    <p>Inviaci i tuoi prodotti con corriere</p>
+                </div>
+                <div class="process-item">
+                    <div class="process-number">2</div>
+                    <h3>Scansione AI</h3>
+                    <p>300 foto per prodotto, creazione modello ai dedicato</p>
+                </div>
+                <div class="process-item">
+                    <div class="process-number">3</div>
+                    <h3>Restituzione veloce</h3>
+                    <p>Prodotti restituiti dopo una sola settimana</p>
+                </div>
+                <div class="process-item">
+                    <div class="process-number">4</div>
+                    <h3>Creazione contenuti</h3>
+                    <p>Generiamo immagini AI esclusive</p>
+                </div>
+                <div class="process-item">
+                    <div class="process-number">5</div>
+                    <h3>Gestione social</h3>
+                    <p>Pubblichiamo per te ogni giorno</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Demo Section - AGGIORNATO CON YOUTUBE -->
+    <section class="video-demo scroll-reveal">
+        <div class="container">
+            <h2 class="section-title">Guarda la Magia in Azione</h2>
+            <p class="section-subtitle">Scopri come trasformiamo i tuoi prodotti con l'AI</p>
+            
+            <div class="video-container">
+                <div class="video-wrapper youtube-wrapper">
+                    <iframe 
+                        src="https://www.youtube.com/embed/dZkjglUfQVU" 
+                        title="WHAT?studio - Demo Servizio AI"
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                
+                <div class="video-stats">
+                    <div class="stat-item">
+                        <i class="fas fa-magic"></i>
+                        <span>300+ foto per prodotto</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Risultati in 3 settimane</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-infinity"></i>
+                        <span>Contenuti illimitati</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before After Demo - COMPLETAMENTE NUOVA -->
+    <section class="before-after-demo-new scroll-reveal">
+        <div class="container">
+            <h2 class="section-title">Dalla Foto Grezza alle Infinite Possibilità</h2>
+            <p class="section-subtitle">Vedi la trasformazione in tempo reale</p>
+            
+            <div class="demo-container-new">
+                <div class="original-section">
+                    <div class="section-label">FOTO GREZZA</div>
+                    <div class="original-photo-new">
+                        <img src="images/demo/original-shoe.webp" alt="Foto grezza prodotto">
+                        <div class="photo-badge">Foto originale</div>
+                    </div>
+                </div>
+                
+                <div class="magic-trigger">
+                    <button class="ai-magic-btn" id="aiMagicBtn">
+                        <div class="magic-icon">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                        <span>AI MAGIC</span>
+                    </button>
+                </div>
+                
+                <div class="results-section">
+                    <div class="section-label">RISULTATI AI</div>
+                    <div class="ai-results-new">
+                        <div class="ai-photo-slot" id="slot1">
+                            <img src="images/demo/ai-urban.webp" alt="Risultato AI 1">
+                            <div class="photo-style">Urban</div>
+                        </div>
+                        <div class="ai-photo-slot" id="slot2">
+                            <img src="images/demo/ai-elegant.webp" alt="Risultato AI 2">
+                            <div class="photo-style">Elegant</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="demo-cta-new">
+                <p>Infinite possibilità creative <span>da una sola foto</span></p>
+                <a href="#packages" class="cta-button">Scopri i Pacchetti</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery scroll-reveal">
+        <div class="container">
+            <h2 class="section-title">Il Nostro Portfolio</h2>
+            
+            <!-- Filter Buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Tutti</button>
+                <button class="filter-btn" data-filter="scarpe">Scarpe</button>
+                <button class="filter-btn" data-filter="borse">Borse</button>
+                <button class="filter-btn" data-filter="accessori">Accessori</button>
+                <button class="filter-btn" data-filter="modelle">Modelle AI</button>
+            </div>
+            
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+                <!-- Scarpe Collection - Prime 8 visibili -->
+                <div class="gallery-item" data-category="scarpe">
+                    <img src="images/gallery/scarpa-01.webp" alt="Scarpa AI Design 01">
+                    <div class="gallery-overlay">
+                        <h4>Urban Elegance</h4>
+                        <p>Collezione Premium</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="scarpe">
+                    <img src="images/gallery/scarpa-02.webp" alt="Scarpa AI Design 02">
+                    <div class="gallery-overlay">
+                        <h4>Street Style</h4>
+                        <p>Design Contemporaneo</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="scarpe">
+                    <img src="images/gallery/scarpa-03.webp" alt="Scarpa AI Design 03">
+                    <div class="gallery-overlay">
+                        <h4>Classic Luxury</h4>
+                        <p>Eleganza Senza Tempo</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="scarpe">
+                    <img src="images/gallery/scarpa-04.webp" alt="Scarpa AI Design 04">
+                    <div class="gallery-overlay">
+                        <h4>Sport Chic</h4>
+                        <p>Performance & Style</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="scarpe">
+                    <img src="images/gallery/scarpa-05.webp" alt="Scarpa AI Design 05">
+                    <div class="gallery-overlay">
+                        <h4>Avant-Garde</h4>
+                        <p>Design Innovativo</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="scarpe">
+                    <img src="images/gallery/scarpa-06.webp" alt="Scarpa AI Design 06">
+                    <div class="gallery-overlay">
+                        <h4>Minimal Chic</h4>
+                        <p>Less is More</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="scarpe">
+                    <img src="images/gallery/scarpa-07.webp" alt="Scarpa AI Design 07">
+                    <div class="gallery-overlay">
+                        <h4>Future Classic</h4>
+                        <p>Innovazione Tradizionale</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="scarpe">
+                    <img src="images/gallery/scarpa-08.webp" alt="Scarpa AI Design 08">
+                    <div class="gallery-overlay">
+                        <h4>Metropolitan</h4>
+                        <p>Urban Sophistication</p>
+                    </div>
+                </div>
+                
+                <!-- Foto nascoste inizialmente -->
+                <div class="gallery-item gallery-hidden" data-category="scarpe">
+                    <img src="images/gallery/scarpa-09.webp" alt="Scarpa AI Design 09">
+                    <div class="gallery-overlay">
+                        <h4>Eco Luxury</h4>
+                        <p>Sostenibilità Premium</p>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-hidden" data-category="scarpe">
+                    <img src="images/gallery/scarpa-010.webp" alt="Scarpa AI Design 10">
+                    <div class="gallery-overlay">
+                        <h4>Tech Fashion</h4>
+                        <p>Innovazione Digitale</p>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-hidden" data-category="scarpe">
+                    <img src="images/gallery/scarpa-011.webp" alt="Scarpa AI Design 11">
+                    <div class="gallery-overlay">
+                        <h4>Artisan Craft</h4>
+                        <p>Maestria Artigianale</p>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-hidden" data-category="scarpe">
+                    <img src="images/gallery/scarpa-012.webp" alt="Scarpa AI Design 12">
+                    <div class="gallery-overlay">
+                        <h4>Night Edition</h4>
+                        <p>Eleganza Serale</p>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-hidden" data-category="scarpe">
+                    <img src="images/gallery/scarpa-013.webp" alt="Scarpa AI Design 13">
+                    <div class="gallery-overlay">
+                        <h4>Limited Edition</h4>
+                        <p>Esclusività Assoluta</p>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-hidden" data-category="scarpe">
+                    <img src="images/gallery/scarpa-014.webp" alt="Scarpa AI Design 14">
+                    <div class="gallery-overlay">
+                        <h4>Retro Futurism</h4>
+                        <p>Stile Nostalgico</p>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-hidden" data-category="scarpe">
+                    <img src="images/gallery/scarpa-015.webp" alt="Scarpa AI Design 15">
+                    <div class="gallery-overlay">
+                        <h4>Minimalist Pro</h4>
+                        <p>Eleganza Essenziale</p>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-hidden" data-category="scarpe">
+                    <img src="images/gallery/scarpa-016.webp" alt="Scarpa AI Design 16">
+                    <div class="gallery-overlay">
+                        <h4>Street Luxury</h4>
+                        <p>Lusso Urbano</p>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-hidden" data-category="scarpe">
+                    <img src="images/gallery/scarpa-017.webp" alt="Scarpa AI Design 17">
+                    <div class="gallery-overlay">
+                        <h4>Bold Statement</h4>
+                        <p>Design Audace</p>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-hidden" data-category="scarpe">
+                    <img src="images/gallery/scarpa-018.webp" alt="Scarpa AI Design 18">
+                    <div class="gallery-overlay">
+                        <h4>Classic Redux</h4>
+                        <p>Classico Reinterpretato</p>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-hidden" data-category="scarpe">
+                    <img src="images/gallery/scarpa-019.webp" alt="Scarpa AI Design 19">
+                    <div class="gallery-overlay">
+                        <h4>Innovation Lab</h4>
+                        <p>Ricerca Avanzata</p>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-hidden" data-category="scarpe">
+                    <img src="images/gallery/scarpa-020.webp" alt="Scarpa AI Design 20">
+                    <div class="gallery-overlay">
+                        <h4>Future Heritage</h4>
+                        <p>Tradizione del Domani</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Show More Button -->
+            <div class="gallery-controls">
+                <button class="show-more-btn" id="showMoreBtn">
+                    <span class="btn-text">Mostra Altri Progetti</span>
+                    <span class="btn-count">(+12)</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Collaborations Section - AGGIORNATO CON SCROLL CAROUSEL -->
+    <section class="brand-collaborations scroll-reveal">
+        <div class="container">
+            <h2 class="section-title">Brand che ci Scelgono</h2>
+            <p class="section-subtitle">La fiducia delle aziende del settore</p>
+            
+            <!-- Brand Logos Carousel Container -->
+            <div class="brands-carousel-container">
+                <button class="carousel-btn prev" id="brandsPrev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                
+                <div class="brands-carousel">
+                    <div class="brands-track">
+                        <!-- 14 Brand Logos -->
+                        <div class="brand-logo">
+                            <img src="images/brands/flecs-logo.webp" alt="Flecs">
+                        </div>
+                        <div class="brand-logo">
+                            <img src="images/brands/brand-02.webp" alt="Brand Partner 2">
+                        </div>
+                        <div class="brand-logo">
+                            <img src="images/brands/brand-03.webp" alt="Brand Partner 3">
+                        </div>
+                        <div class="brand-logo">
+                            <img src="images/brands/brand-04.webp" alt="Brand Partner 4">
+                        </div>
+                        <div class="brand-logo">
+                            <img src="images/brands/brand-05.webp" alt="Brand Partner 5">
+                        </div>
+                        <div class="brand-logo">
+                            <img src="images/brands/brand-06.webp" alt="Brand Partner 6">
+                        </div>
+                        <div class="brand-logo">
+                            <img src="images/brands/brand-07.webp" alt="Brand Partner 7">
+                        </div>
+                        <div class="brand-logo">
+                            <img src="images/brands/brand-08.webp" alt="Brand Partner 8">
+                        </div>
+                        <div class="brand-logo">
+                            <img src="images/brands/brand-09.webp" alt="Brand Partner 9">
+                        </div>
+                        <div class="brand-logo">
+                            <img src="images/brands/brand-10.webp" alt="Brand Partner 10">
+                        </div>
+                        <div class="brand-logo">
+                            <img src="images/brands/brand-11.webp" alt="Brand Partner 11">
+                        </div>
+                        <div class="brand-logo">
+                            <img src="images/brands/brand-12.webp" alt="Brand Partner 12">
+                        </div>
+                        <div class="brand-logo">
+                            <img src="images/brands/brand-13.webp" alt="Brand Partner 13">
+                        </div>
+                        <div class="brand-logo">
+                            <img src="images/brands/brand-14.webp" alt="Brand Partner 14">
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-btn next" id="brandsNext">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section - FIXATO BADGE SCONTO -->
+    <section id="packages" class="packages scroll-reveal">
+        <div class="container">
+            <h2 class="section-title">I Nostri Pacchetti</h2>
+            <div class="packages-grid">
+                <div class="package premium">
+                    <div class="package-label">PIÙ POPOLARE</div>
+                    <!-- BADGE SCONTO RIPOSIZIONATO E RIDOTTO -->
+                    <div class="premium-discount-badge-fixed">
+                        <i class="fas fa-percentage"></i>
+                        <span>-10%</span>
+                    </div>
+                    <h3>PACCHETTO PREMIUM</h3>
+                    <div class="package-price">
+                        9.000€
+                        <small>+ IVA</small>
+                    </div>
+                    <ul class="package-features">
+                        <li><i class="fas fa-check"></i> Tutti i social (Instagram, Facebook, TikTok, LinkedIn, X)</li>
+                        <li><i class="fas fa-check"></i> 120 immagini per 6 mesi</li>
+                        <li><i class="fas fa-check"></i> 6 video AI unici in 6 mesi</li>
+                        <li><i class="fas fa-check"></i> Report mensili e ottimizzazione</li>
+                        <li><i class="fas fa-check"></i> Copertura 5 giorni su 7</li>
+                        <li><i class="fas fa-check"></i> Strategia completa</li>
+                        <li><i class="fas fa-check"></i> 10% sconto su extra (modella AI, video aggiuntivi)</li>
+                    </ul>
+                    <a href="pacchetto_premium.html" class="cta-button">Scopri di più</a>
+                </div>
+                <div class="package">
+                    <h3>PACCHETTO SMART</h3>
+                    <div class="package-price">
+                        6.000€
+                        <small>+ IVA</small>
+                    </div>
+                    <ul class="package-features">
+                        <li><i class="fas fa-check"></i> Instagram + Facebook</li>
+                        <li><i class="fas fa-check"></i> 80 immagini per 6 mesi</li>
+                        <li><i class="fas fa-check"></i> 3 video AI unici in 6 mesi</li>
+                        <li><i class="fas fa-check"></i> Strategia di repost intelligente</li>
+                        <li><i class="fas fa-check"></i> Copertura 5 giorni su 7</li>
+                        <li><i class="fas fa-check"></i> Strategia smart</li>
+                    </ul>
+                    <a href="pacchetto_smart.html" class="cta-button">Scopri di più</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Extra Section - ROBOT MIGLIORATO -->
+    <section class="extra-new scroll-reveal">
+        <div class="container">
+            <h2 class="section-title">Extra: Modella AI Esclusiva</h2>
+            <div class="extra-box-new">
+                <div class="ai-avatar-enhanced">
+                    <div class="ai-head">
+                        <div class="ai-face">
+                            <div class="ai-eye left">
+                                <div class="eye-pupil"></div>
+                            </div>
+                            <div class="ai-eye right">
+                                <div class="eye-pupil"></div>
+                            </div>
+                            <div class="ai-smile"></div>
+                        </div>
+                        <div class="neural-network">
+                            <span class="neural-dot"></span>
+                            <span class="neural-dot"></span>
+                            <span class="neural-dot"></span>
+                            <span class="neural-dot"></span>
+                            <span class="neural-dot"></span>
+                            <span class="neural-dot"></span>
+                        </div>
+                    </div>
+                </div>
+                <h3>Il tuo volto unico per il brand</h3>
+                <div class="extra-price">1.000€ <small>una tantum</small></div>
+                <ul class="extra-features">
+                    <li><i class="fas fa-sparkles"></i> Volto unico per il tuo brand</li>
+                    <li><i class="fas fa-sparkles"></i> Uso illimitato</li>
+                    <li><i class="fas fa-sparkles"></i> Totale controllo creativo</li>
+                </ul>
+                <a href="modella_ai.html" class="cta-button">Scopri di più</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantees Section -->
+    <section class="guarantees scroll-reveal">
+        <div class="container">
+            <h2 class="section-title">Le Nostre Garanzie</h2>
+            <div class="guarantees-grid">
+                <div class="guarantee-item">
+                    <div class="guarantee-icon"><i class="fas fa-lock"></i></div>
+                    <h3>Dati 100% sicuri</h3>
+                    <p>Workstation locale, nessun dato a terzi</p>
+                </div>
+                <div class="guarantee-item">
+                    <div class="guarantee-icon"><i class="fas fa-rocket"></i></div>
+                    <h3>Qualità Premium</h3>
+                    <p>Contenuti di altissimo livello</p>
+                </div>
+                <div class="guarantee-item">
+                    <div class="guarantee-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Report mensili</h3>
+                    <p>Analisi dettagliate delle performance</p>
+                </div>
+                <div class="guarantee-item">
+                    <div class="guarantee-icon"><i class="fas fa-bullseye"></i></div>
+                    <h3>Strategia su misura</h3>
+                    <p>Personalizzata per il tuo brand</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact scroll-reveal">
+        <div class="container">
+            <h2 class="section-title">Prenota una consulenza gratuita</h2>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Nome e Cognome" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" name="phone" placeholder="Telefono" required>
+                </div>
+                <div class="form-group">
+                    <select name="package" required>
+                        <option value="">Seleziona pacchetto di interesse</option>
+                        <option value="premium">Pacchetto Premium (9.000€)</option>
+                        <option value="smart">Pacchetto Smart (6.000€)</option>
+                        <option value="premium-modella">Premium + Modella AI (10.000€)</option>
+                        <option value="smart-modella">Smart + Modella AI (7.000€)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Messaggio (opzionale)" rows="4"></textarea>
+                </div>
+                <button type="submit" class="submit-button">
+                    <span class="button-text">Invia Richiesta</span>
+                    <span class="button-loading" style="display: none;">
+                        <i class="fas fa-spinner fa-spin"></i> Invio in corso...
+                    </span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 WHAT?studio. Tutti i diritti riservati.</p>
+                <div class="footer-right">
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/whatstudio.prj/" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/share/1a5Eqy91do/?mibextid=wwXIfr" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="mailto:whatcreativestudio@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox per gallery -->
+    <div class="lightbox" id="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img src="" alt="" id="lightbox-image">
+    </div>
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
