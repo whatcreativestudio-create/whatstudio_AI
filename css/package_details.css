@@ -1,0 +1,904 @@
+/* =====================================================
+   Stili specifici per le pagine dei pacchetti - OTTIMIZZATA
+   ===================================================== */
+
+/* ========== Package Hero ========== */
+.package-hero {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.premium-hero {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+}
+
+.smart-hero {
+    background: linear-gradient(135deg, #2a2a2a 0%, #3a3a3a 100%);
+}
+
+.package-hero::before {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, var(--red) 0%, transparent 60%);
+    opacity: 0.05;
+    animation: pulse 4s ease-in-out infinite;
+}
+
+.package-hero-content {
+    text-align: center;
+    z-index: 1;
+    animation: fadeInUp 1s ease-out;
+}
+
+.package-badge {
+    display: inline-block;
+    background: var(--red);
+    color: var(--white);
+    padding: 0.5rem 2rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.package-hero h1 {
+    font-size: clamp(3rem, 6vw, 5rem);
+    color: var(--white);
+    margin-bottom: 1rem;
+    font-weight: 900;
+}
+
+.package-hero h1 span {
+    color: var(--red);
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.package-subtitle {
+    font-size: 1.5rem;
+    color: #ccc;
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+
+.price-hero {
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--white);
+    margin-bottom: 2rem;
+}
+
+.price-hero small {
+    font-size: 1.2rem;
+    opacity: 0.7;
+}
+
+/* NUOVO: Premium Benefits Hero - DESIGN ELEGANTE */
+.premium-benefits-hero {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.benefit-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 600;
+    color: var(--white);
+    transition: var(--transition);
+}
+
+.benefit-tag:hover {
+    background: rgba(76, 175, 80, 0.2);
+    border-color: #4CAF50;
+    transform: translateY(-2px);
+}
+
+.benefit-tag i {
+    color: #4CAF50;
+    font-size: 1.1rem;
+}
+
+/* ========== Features Grid ========== */
+.package-includes {
+    padding: 5rem 1rem;
+    background: var(--gray);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.feature-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+    text-align: center;
+    position: relative;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* FIXATO: Special Premium Card - SENZA ROTAZIONE */
+.feature-card.special-premium {
+    background: linear-gradient(135deg, #f8fff8 0%, #f0fff0 100%);
+    border: 2px solid #4CAF50;
+    position: relative;
+    overflow: visible;
+}
+
+.special-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.special-header i {
+    color: #FFD700;
+    font-size: 2rem;
+}
+
+.special-header h3 {
+    color: var(--black);
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.premium-perks {
+    list-style: none;
+    text-align: left;
+}
+
+.premium-perks li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.8rem 0;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(76, 175, 80, 0.2);
+}
+
+.perk-icon {
+    font-size: 1.5rem;
+    min-width: 35px;
+    text-align: center;
+}
+
+.feature-card.special-premium:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(76, 175, 80, 0.3);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    color: var(--red);
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    margin-bottom: 1rem;
+    color: var(--black);
+}
+
+.feature-card ul {
+    list-style: none;
+    text-align: left;
+}
+
+.feature-card li {
+    padding: 0.5rem 0;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.feature-card li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: var(--red);
+    font-weight: bold;
+}
+
+/* ========== Timeline - FIXATA ========== */
+.timeline-section {
+    padding: 5rem 1rem;
+    background: var(--white);
+}
+
+.timeline-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.timeline {
+    position: relative;
+    padding: 2rem 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background: var(--red);
+    opacity: 0.3;
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 3rem;
+    position: relative;
+    align-items: center;
+}
+
+.timeline-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    background: var(--red);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    z-index: 1;
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3);
+}
+
+.timeline-content {
+    width: 45%;
+    padding: 2rem;
+    background: var(--gray);
+    border-radius: 15px;
+    margin: 0 2.5%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    text-align: right;
+}
+
+.timeline-content h3 {
+    color: var(--red);
+    margin-bottom: 0.5rem;
+}
+
+.timeline-content h4 {
+    margin-bottom: 0.5rem;
+}
+
+/* ========== Comparison Table ========== */
+.comparison-section {
+    padding: 5rem 1rem;
+    background: var(--black);
+    color: var(--white);
+}
+
+.comparison-section .section-title {
+    color: var(--white);
+}
+
+.comparison-table {
+    overflow-x: auto;
+    margin-top: 3rem;
+}
+
+.comparison-table table {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 1.5rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.comparison-table th {
+    background: rgba(255, 255, 255, 0.1);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.comparison-table .highlight {
+    background: rgba(255, 0, 0, 0.1);
+    color: var(--white);
+    font-weight: 600;
+}
+
+.comparison-table i.fa-check {
+    color: #4CAF50;
+    font-size: 1.2rem;
+}
+
+.comparison-table i.fa-times {
+    color: #f44336;
+    font-size: 1.2rem;
+}
+
+/* ========== Smart Process ========== */
+.smart-process {
+    padding: 5rem 1rem;
+    background: var(--white);
+}
+
+.optimization-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.opt-card {
+    text-align: center;
+    padding: 2rem;
+    background: var(--gray);
+    border-radius: 15px;
+    transition: var(--transition);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.opt-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.opt-number {
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--red);
+    margin-bottom: 1rem;
+}
+
+.opt-card h3 {
+    margin-bottom: 0.5rem;
+}
+
+/* ========== Calendar Section ========== */
+.calendar-section {
+    padding: 5rem 1rem;
+    background: var(--gray);
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 3rem auto;
+}
+
+.day-card {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+}
+
+.day-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.day-card h4 {
+    margin-bottom: 0.8rem;
+    color: var(--black);
+    font-size: 1.2rem;
+}
+
+.tag {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.tag.new-post {
+    background: var(--red);
+    color: var(--white);
+}
+
+.tag.new-story {
+    background: #4CAF50;
+    color: var(--white);
+}
+
+.tag.repost-story {
+    background: #2196F3;
+    color: var(--white);
+}
+
+.day-card p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.4;
+}
+
+.calendar-note {
+    text-align: center;
+    margin-top: 2rem;
+    font-style: italic;
+    color: #666;
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-note i {
+    color: var(--red);
+    margin-right: 0.5rem;
+}
+
+/* ========== Benefits Grid ========== */
+.why-smart {
+    padding: 5rem 1rem;
+    background: var(--white);
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.benefit-item {
+    text-align: center;
+    padding: 2rem;
+    background: var(--gray);
+    border-radius: 15px;
+    transition: var(--transition);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.benefit-item i {
+    font-size: 3rem;
+    color: var(--red);
+    margin-bottom: 1rem;
+}
+
+.benefit-item h3 {
+    margin-bottom: 0.5rem;
+}
+
+/* ========== Upgrade Section - FIXATA ========== */
+.upgrade-section {
+    padding: 5rem 1rem;
+    background: var(--gray);
+}
+
+.upgrade-box {
+    background: var(--white);
+    padding: 3rem;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 700px;
+    margin: 3rem auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.upgrade-box h3 {
+    color: var(--red);
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.upgrade-box p {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.addon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.addon-item {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+    position: relative;
+}
+
+.addon-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.addon-icon {
+    font-size: 3rem;
+    color: var(--red);
+    margin-bottom: 1rem;
+}
+
+.addon-item h4 {
+    margin-bottom: 0.8rem;
+    color: var(--black);
+}
+
+.addon-item p {
+    margin-bottom: 1.5rem;
+    color: #666;
+}
+
+/* Addon Pricing con sconto */
+.addon-pricing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.original-price {
+    font-size: 1.2rem;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.discounted-price {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: var(--red);
+}
+
+.discount-badge {
+    background: #4CAF50;
+    color: var(--white);
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+/* NUOVO: Contact Price per Immagini Extra */
+.contact-price {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 25px;
+    color: var(--dark-gray);
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.contact-price i {
+    color: var(--red);
+}
+
+.addon-note {
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--red);
+    margin-top: 1rem;
+}
+
+/* ========== FAQ Section ========== */
+.faq-section {
+    padding: 5rem 1rem;
+    background: var(--white);
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.faq-item {
+    padding: 2rem;
+    background: var(--gray);
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+}
+
+.faq-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.faq-item h3 {
+    color: var(--red);
+    margin-bottom: 1rem;
+}
+
+.faq-item p {
+    line-height: 1.6;
+    color: #555;
+}
+
+/* ========== CTA Sections ========== */
+.cta-premium {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+}
+
+.cta-smart {
+    background: linear-gradient(135deg, #2a2a2a 0%, #3a3a3a 100%);
+}
+
+.cta-description {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 3rem;
+}
+
+/* ========== Price Note ========== */
+.price-note {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.price-note i {
+    font-size: 1.5rem;
+    color: var(--red);
+    flex-shrink: 0;
+}
+
+.price-note p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 1024px) {
+    .features-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    
+    .addon-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    /* Timeline responsive */
+    .timeline::before {
+        left: 30px;
+    }
+    
+    .timeline-item {
+        flex-direction: column !important;
+        margin-left: 60px;
+    }
+    
+    .timeline-marker {
+        left: 30px;
+    }
+    
+    .timeline-content {
+        width: 100%;
+        margin: 0;
+        text-align: left !important;
+    }
+    
+    /* Benefits hero */
+    .premium-benefits-hero {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .benefit-tag {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    /* Calendar */
+    .calendar-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Comparison table */
+    .comparison-table {
+        font-size: 0.9rem;
+    }
+    
+    .comparison-table th,
+    .comparison-table td {
+        padding: 1rem 0.5rem;
+    }
+    
+    /* Features */
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .addon-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .optimization-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .package-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .price-hero {
+        font-size: 2.5rem;
+    }
+    
+    .timeline-content {
+        padding: 1.5rem;
+    }
+    
+    .addon-pricing {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .discounted-price {
+        font-size: 1.5rem;
+    }
+    
+    .upgrade-box {
+        padding: 2rem 1.5rem;
+    }
+    
+    .optimization-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .calendar-grid {
+        gap: 1rem;
+    }
+    
+    .day-card {
+        padding: 1rem;
+    }
+    
+    .contact-price {
+        font-size: 0.85rem;
+        padding: 0.6rem 1rem;
+    }
+}
+
+/* ========== Animation Enhancements ========== */
+@keyframes countUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.opt-number,
+.discounted-price {
+    animation: countUp 0.8s ease-out;
+}
+
+.timeline-item {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.timeline-item:nth-child(even) {
+    animation-delay: 0.2s;
+}
+
+.addon-item:hover .addon-icon {
+    transform: scale(1.1);
+    transition: var(--transition);
+}
+
+.day-card:hover .tag {
+    transform: scale(1.05);
+    transition: var(--transition);
+}
+
+/* ========== Print Styles ========== */
+@media print {
+    .package-hero,
+    .timeline::before,
+    .comparison-table::before {
+        background: none !important;
+    }
+    
+    .discount-hero,
+    .addon-pricing {
+        color: black !important;
+    }
+    
+    * {
+        animation: none !important;
+        transition: none !important;
+        transform: none !important;
+    }
+}
