@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Modella AI Esclusiva - Crea il volto unico del tuo brand con WHAT?studio">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <title>Modella AI Esclusiva - WHAT?studio</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modella_ai.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo-fixed">
+                <a href="index.html">
+                    <img src="images/logos/logo.webp" alt="WHAT?studio Logo">
+                </a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#process">Come Funziona</a></li>
+                <li><a href="index.html#packages">Pacchetti</a></li>
+                <li><a href="index.html#gallery">Portfolio</a></li>
+                <li><a href="chi-siamo.html">Chi Siamo</a></li>
+                <li><a href="index.html#contact">Contatti</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Modella AI -->
+    <section class="modella-hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="badge">ESCLUSIVITÀ ASSOLUTA</div>
+                    <h1>La Tua <span>Modella AI</span> Esclusiva</h1>
+                    <p class="subtitle">Un volto unico creato solo per il tuo brand. Nessun altro potrà mai usarla.</p>
+                    <div class="price-tag">
+                        <span class="price">1.000€</span>
+                        <span class="price-type">una tantum</span>
+                    </div>
+                    <a href="#examples" class="cta-button">Scopri Come Funziona</a>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-faces">
+                        <div class="face-card" style="--delay: 0s;">
+                            <img src="images/modelle/face_01.webp" alt="Esempio modella AI 1">
+                        </div>
+                        <div class="face-card" style="--delay: 0.5s;">
+                            <img src="images/modelle/face_02.webp" alt="Esempio modella AI 2">
+                        </div>
+                        <div class="face-card" style="--delay: 1s;">
+                            <img src="images/modelle/face_03.webp" alt="Esempio modella AI 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Come Funziona -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">Come Creiamo la Tua Modella</h2>
+            
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <h3>Briefing Creativo</h3>
+                    <p>Definiamo insieme le caratteristiche: età, etnia, stile, personalità. Puoi ispirarci a volti noti o creare qualcosa di totalmente nuovo.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <h3>Generazione AI</h3>
+                    <p>Utilizziamo tecnologie avanzate per creare un volto fotorealistico unico. Nessuna persona reale, 100% generata da AI.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <h3>Training Esclusivo</h3>
+                    <p>Alleniamo un modello AI (lora) dedicato solo al tuo volto. Questo garantisce coerenza perfetta in ogni scatto.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">04</div>
+                    <h3>Consegna & Utilizzo</h3>
+                    <p>La modella è tua per sempre. Puoi usarla in infinite campagne, con qualsiasi prodotto, in qualsiasi ambientazione.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Esempi Visual - COMPLETAMENTE NUOVA SEZIONE -->
+    <section id="examples" class="examples-section">
+        <div class="container">
+            <h2 class="section-title">Versatilità Infinita</h2>
+            <p class="section-subtitle">Una modella, infinite possibilità creative</p>
+            
+            <!-- Stesso Volto Section -->
+            <div class="same-face-section">
+                <h3 class="subsection-title">Lo Stesso Volto, Stili Diversi</h3>
+                <div class="showcase-main">
+                    <img src="images/modelle/showcase_main.webp" alt="Modella AI principale" id="mainShowcase">
+                    <div class="main-overlay">
+                        <h4>Il Tuo Volto Unico</h4>
+                        <p>Stesso viso, infinite espressioni</p>
+                    </div>
+                </div>
+                
+                <div class="face-styles-grid">
+                    <div class="face-style-item">
+                        <img src="images/modelle/lifestyle_01.webp" alt="Lifestyle" onclick="openLightbox(this.src)">
+                        <span>Lifestyle</span>
+                    </div>
+                    <div class="face-style-item">
+                        <img src="images/modelle/sport_01.webp" alt="Sport" onclick="openLightbox(this.src)">
+                        <span>Sport</span>
+                    </div>
+                    <div class="face-style-item">
+                        <img src="images/modelle/elegance_01.webp" alt="Elegance" onclick="openLightbox(this.src)">
+                        <span>Elegance</span>
+                    </div>
+                    <div class="face-style-item">
+                        <img src="images/modelle/casual_01.webp" alt="Casual" onclick="openLightbox(this.src)">
+                        <span>Casual</span>
+                    </div>
+                </div>
+
+            <!-- Gallery Carosello Section -->
+            <div class="versatility-gallery-section">
+                <h3 class="subsection-title">Gallery Completa</h3>
+                <p class="gallery-description">Esplora tutte le possibilità creative con la tua modella AI esclusiva</p>
+                
+                <button class="gallery-toggle-btn" id="galleryToggleBtn">
+                    <i class="fas fa-images"></i>
+                    <span>Esplora Gallery Completa</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                
+                <div class="versatility-gallery" id="versatilityGallery" style="display: none;">
+                    <div class="gallery-categories">
+                        <button class="cat-btn active" data-category="all">Tutti</button>
+                        <button class="cat-btn" data-category="lifestyle">Lifestyle</button>
+                        <button class="cat-btn" data-category="sport">Sport</button>
+                        <button class="cat-btn" data-category="elegance">Eleganza</button>
+                        <button class="cat-btn" data-category="casual">Casual</button>
+                        <button class="cat-btn" data-category="business">Business</button>
+                    </div>
+                    
+                    <div class="gallery-grid-new">
+                        <!-- Lifestyle -->
+                        <div class="gallery-item-new" data-category="lifestyle">
+                            <img src="images/modelle/lifestyle_01.webp" alt="Lifestyle 1">
+                            <div class="item-overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-item-new" data-category="lifestyle">
+                            <img src="images/modelle/lifestyle_02.webp" alt="Lifestyle 2">
+                            <div class="item-overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-item-new" data-category="lifestyle">
+                            <img src="images/modelle/lifestyle_03.webp" alt="Lifestyle 3">
+                            <div class="item-overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-item-new" data-category="lifestyle">
+                            <img src="images/modelle/lifestyle_04.webp" alt="Lifestyle 4">
+                            <div class="item-overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                        
+                        <!-- Sport -->
+                        <div class="gallery-item-new" data-category="sport">
+                            <img src="images/modelle/sport_01.webp" alt="Sport 1">
+                            <div class="item-overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-item-new" data-category="sport">
+                            <img src="images/modelle/sport_02.webp" alt="Sport 2">
+                            <div class="item-overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-item-new" data-category="sport">
+                            <img src="images/modelle/sport_03.webp" alt="Sport 3">
+                            <div class="item-overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-item-new" data-category="sport">
+                            <img src="images/modelle/sport_04.webp" alt="Sport 4">
+                            <div class="item-overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                        
+                        <!-- Elegance -->
+                        <div class="gallery-item-new" data-category="elegance">
+                            <img src="images/modelle/elegance_01.webp" alt="Elegance 1">
+                            <div class="item-overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-item-new" data-category="elegance">
+                            <img src="images/modelle/elegance_02.webp" alt="Elegance 2">
+                            <div class="item-overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-item-new" data-category="elegance">
+                            <img src="images/modelle/elegance_03.webp" alt="Elegance 3">
+                            <div class="item-overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-item-new" data-category="elegance">
+                            <img src="images/modelle/elegance_04.webp" alt="Elegance 4">
+                            <div class="item-overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                        
+                        <!-- Casual -->
+                        <div class="gallery-item-new" data-category="casual">
+                            <img src="images/modelle/casual_01.webp" alt="Casual 1">
+                            <div class="item-overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-item-new" data-category="casual">
+                            <img src="images/modelle/casual_02.webp" alt="Casual 2">
+                            <div class="item-overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-item-new" data-category="casual">
+                            <img src="images/modelle/casual_03.webp" alt="Casual 3">
+                            <div class="item-overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-item-new" data-category="casual">
+                            <img src="images/modelle/casual_04.webp" alt="Casual 4">
+                            <div class="item-overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                        
+                        <!-- Business -->
+                        <div class="gallery-item-new" data-category="business">
+                            <img src="images/modelle/business_01.webp" alt="Business 1">
+                            <div class="item-overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-item-new" data-category="business">
+                            <img src="images/modelle/business_02.webp" alt="Business 2">
+                            <div class="item-overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-item-new" data-category="business">
+                            <img src="images/modelle/business_03.webp" alt="Business 3">
+                            <div class="item-overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-item-new" data-category="business">
+                            <img src="images/modelle/business_04.webp" alt="Business 4">
+                            <div class="item-overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vantaggi -->
+    <section class="benefits-section">
+        <div class="container">
+            <h2 class="section-title">Perché una Modella AI Esclusiva?</h2>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3>Esclusività Totale</h3>
+                    <p>Il volto appartiene solo al tuo brand. Nessun competitor potrà mai usarlo.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-infinity"></i>
+                    </div>
+                    <h3>Uso Illimitato</h3>
+                    <p>Zero costi di modella, trucco, fotografo. Scatti illimitati per sempre.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Coerenza Perfetta</h3>
+                    <p>Stesso volto in ogni campagna. Il tuo pubblico la riconoscerà sempre.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Velocità Estrema</h3>
+                    <p>Nuovi scatti in pochi minuti, non servono casting o shooting.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Zero Controversie</h3>
+                    <p>Nessun rischio legato a persone reali. Totale controllo sull'immagine.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Multi-Etnica</h3>
+                    <p>Puoi scegliere qualsiasi etnia o mix per rappresentare il tuo pubblico.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Confronto -->
+    <section class="comparison-modella">
+        <div class="container">
+            <h2 class="section-title">Modella Tradizionale vs AI</h2>
+            
+            <div class="comparison-cards">
+                <div class="comp-card traditional">
+                    <h3>Modella Tradizionale</h3>
+                    <ul>
+                        <li><i class="fas fa-times"></i> 500-2000€ per shooting</li>
+                        <li><i class="fas fa-times"></i> Disponibilità limitata</li>
+                        <li><i class="fas fa-times"></i> Diritti d'immagine complessi</li>
+                        <li><i class="fas fa-times"></i> Invecchiamento nel tempo</li>
+                        <li><i class="fas fa-times"></i> Possibili controversie</li>
+                        <li><i class="fas fa-times"></i> Location e team richiesti</li>
+                    </ul>
+                </div>
+                
+                <div class="comp-card ai">
+                    <h3>Modella AI Esclusiva</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> 1000€ una volta per sempre</li>
+                        <li><i class="fas fa-check"></i> Disponibile 24/7</li>
+                        <li><i class="fas fa-check"></i> Diritti totali e perpetui</li>
+                        <li><i class="fas fa-check"></i> Sempre uguale nel tempo</li>
+                        <li><i class="fas fa-check"></i> Zero rischi legali</li>
+                        <li><i class="fas fa-check"></i> Qualsiasi location virtuale</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Demo - AGGIORNATO CON YOUTUBE -->
+    <section class="video-section">
+        <div class="container">
+            <h2 class="section-title">Guarda la Magia in Azione</h2>
+            
+            <div class="video-wrapper youtube-wrapper">
+                <iframe 
+                    src="https://www.youtube.com/embed/oK4mKwQM3Oc" 
+                    title="WHAT?studio - Demo Modella AI"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            
+            <div class="video-features">
+                <div class="vf-item">
+                    <i class="fas fa-magic"></i>
+                    <span>Cambio outfit istantaneo</span>
+                </div>
+                <div class="vf-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Ambientazioni infinite</span>
+                </div>
+                <div class="vf-item">
+                    <i class="fas fa-camera"></i>
+                    <span>Ogni angolo possibile</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-modella">
+        <div class="container">
+            <h2 class="section-title">Domande Frequenti</h2>
+            
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <h3>È davvero esclusiva per il mio brand?</h3>
+                    <p>Assolutamente sì. Una volta creata, il modello AI viene registrato esclusivamente a tuo nome. Firmiamo un contratto che garantisce l'uso esclusivo.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Posso modificarla in futuro?</h3>
+                    <p>Il volto rimane lo stesso per garantire riconoscibilità, ma puoi cambiare acconciature, makeup, espressioni in qualsiasi momento.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Quanto tempo serve per crearla?</h3>
+                    <p>Dal briefing alla consegna: 5-7 giorni lavorativi. Include revisioni e perfezionamenti fino alla tua completa soddisfazione.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Posso ispirarmi a una persona reale?</h3>
+                    <p>Possiamo creare volti ispirati a determinati stili o caratteristiche, ma non replichiamo persone reali per motivi legali ed etici.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+<section id="contact-modella" class="cta-modella">
+    <div class="container">
+        <div class="cta-box">
+            <h2>Crea la Tua Modella AI Esclusiva</h2>
+            <p>Dai un volto unico al tuo brand. Per sempre.</p>
+            
+            <div class="cta-button-wrapper">
+                <a href="index.html#contact" class="cta-main-button">
+                    <span>Richiedi Modella AI</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <p class="cta-note">Compilando il form della homepage, specifica nel messaggio che vuoi la "Modella AI Esclusiva"</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 WHAT?studio. Tutti i diritti riservati.</p>
+                <div class="footer-right">
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/whatstudio.prj/" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/share/1a5Eqy91do/?mibextid=wwXIfr" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="mailto:whatcreativestudio@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox per gallery -->
+    <div class="lightbox" id="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img src="" alt="" id="lightbox-image">
+    </div>
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/modella_ai.js"></script>
+</body>
+</html>
