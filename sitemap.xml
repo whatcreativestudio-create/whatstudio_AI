@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- Homepage - priorità massima -->
+  <url>
+    <loc>https://whatstudio-ai.com/</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Pagina Chi Siamo -->
+  <url>
+    <loc>https://whatstudio-ai.com/chi-siamo.html</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Modella AI -->
+  <url>
+    <loc>https://whatstudio-ai.com/modella_ai.html</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Pacchetto Test -->
+  <url>
+    <loc>https://whatstudio-ai.com/pacchetto_test.html</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Pacchetto Smart -->
+  <url>
+    <loc>https://whatstudio-ai.com/pacchetto_smart.html</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Pacchetto Premium -->
+  <url>
+    <loc>https://whatstudio-ai.com/pacchetto_premium.html</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+</urlset>

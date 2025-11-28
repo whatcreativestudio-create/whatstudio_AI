@@ -1,0 +1,12 @@
+# robots.txt per WHAT?studio
+# Questo file dice ai motori di ricerca cosa possono leggere
+
+User-agent: *
+Allow: /
+
+# Blocca cartelle non necessarie (opzionale)
+Disallow: /css/
+Disallow: /js/
+
+# Sitemap
+Sitemap: https://whatstudio-ai.com/sitemap.xml
